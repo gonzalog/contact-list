@@ -29,8 +29,14 @@
   padding-top: 30px;
 }
 
+.mobile-contact-profile {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
 .contact-data-line {
   padding-top: 15px;
+  padding-left: 15px;
 }
 
 .contact-profile-pic {
@@ -39,4 +45,12 @@
 
 .contact-profile-title {
   margin-left: 20px;
+}
+
+.control-panel {
+  margin-bottom: 10px;
+}
+
+.contact-profile-header {
+  padding-top: 20px;
 }

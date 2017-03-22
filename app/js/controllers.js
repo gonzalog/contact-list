@@ -6,11 +6,17 @@ contactListControllers.controller('ContactIndexCtrl', ['$scope', 'Contacts',
       Contacts.get(function(data){
         $scope.contacts = data
         $scope.currentContact = $scope.contacts[0]
+        $scope.displayingContact = false
       })
     }
 
     $scope.selectContact = function(contact) {
       $scope.currentContact = contact
+      $scope.displayingContact = true
+    }
+
+    $scope.closeProfile = function() {
+      $scope.displayingContact = false
     }
 
     $scope.favoriteClick = function(contact) {

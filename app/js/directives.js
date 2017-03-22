@@ -3,7 +3,7 @@ var contactListDirectives = angular.module('contactListDirectives', []);
 contactListDirectives.directive('favorite', function() {
   return {
     scope: { favorite: '=' },
-    template: '<span class="glyphicon glyphicon-{{favorite ? \'star\' : \'star-empty\'}}"></span>',
+    template: '<span class="fa fa-{{favorite ? \'star\' : \'star-o\'}}"></span>',
     replace: true
   };
 });
