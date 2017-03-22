@@ -13,6 +13,10 @@ contactListControllers.controller('ContactIndexCtrl', ['$scope', 'Contacts',
       $scope.currentContact = contact
     }
 
+    $scope.favoriteClick = function(contact) {
+      contact.favorite = !contact.favorite;
+    }
+
     $scope.toDate = function(value){
       return (new Date(Number(value))).toDateString()
     }

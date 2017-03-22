@@ -1,1 +1,2 @@
-var contactListApp = angular.module('contactListApp', ['contactListControllers', 'contactListServices'])
+var contactListApp = angular.module('contactListApp',
+	['contactListControllers', 'contactListServices', 'contactListDirectives'])

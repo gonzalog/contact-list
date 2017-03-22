@@ -1,0 +1,66 @@
+<div class="row">
+  <div class="pull-right">
+    <div favorite="contact.favorite" class="nav-bar-item" ng-click="favoriteClick(contact)"></div>
+    <span class="fa fa-pencil nav-bar-item"></span>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-4 contact-profile-pic">
+    <img src="{{contact.largeImageURL}}">
+  </div>
+  <div class="col-xs-6 contact-profile-title">
+    <h3><b>{{contact.name}}</b></h3>
+    <br>
+    <h4>Company:</h4>
+    <h4><b>{{contact.company}}</b></h4>
+  </div>
+</div>
+<div class="row">
+  <div class="contact-data-line">
+    <h4>
+    Phone:
+    </h4>
+    <h4>
+      <b>
+        {{contact.phone.home}}
+        <div class="pull-right">Home</div>
+      </b>
+    </h4>
+  </div>
+  <div class="contact-data-line">
+    <h4>
+      Address:
+    </h4>
+    <h4>
+      <b>
+        {{contact.address.street}}
+      </b>
+    </h4>
+    <h4>
+      <b>
+        {{contact.address.city}}, {{contact.address.state}} {{contact.address.zip}}
+      </b>
+    </h4>
+  </div>
+  <div class="contact-data-line">
+    <h4>
+      Birthday:
+    </h4>
+    <h4>
+      <b>
+        {{toDate(contact.birthdate)}}
+      </b>
+    </h4>
+  </div>
+  <div class="contact-data-line">
+    <h4>
+      Email:
+    </h4>
+    <h4>
+      <b>
+        {{contact.email}}
+        <div class="pull-right">Work</div>
+      </b>
+    </h4>
+  </div>
+</div>

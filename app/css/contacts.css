@@ -2,7 +2,11 @@
   min-width: 450px;
 }
 
-.contact-list {
+.nav-bar-item {
+  margin-right: 15;
+}
+
+.desktop-contact-list {
   padding-left: 0;
   padding-right: 0;
   max-width: 30%;
@@ -20,7 +24,7 @@
   margin-right: 15px;
 }
 
-.contact-profile {
+.desktop-contact-profile {
   padding-left: 45px;
   padding-top: 30px;
 }
