@@ -24,6 +24,11 @@ contactListDirectives.directive('contactProfile', function() {
       contact: '=',
       favoriteClick: '='
     },
+    link: function(scope, elements, attributes) {
+      scope.toDate = function(date) {
+        return (new Date(Number(date))).toDateString();
+      }
+    },
     templateUrl: 'app/views/contact-profile.html'
   };
 });

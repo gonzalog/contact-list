@@ -1,11 +1,11 @@
-<div class="list-group">
-  <div ng-repeat="contact in contacts">
-    <a href="#" class="list-group-item contact-item" ng-click="onContactClick(contact)">
-      <img src="{{contact.smallImageURL}}" class="contact-pic">
-      <div class="contact-title">
-        <h4 class="list-group-item-heading">{{contact.name}}</h4>
-        <p class="list-group-item-text">{{contact.phone.home}}</p>
-      </div>
-    </a>
+<div ng-repeat="contact in contacts">
+  <div class="contact-item row" ng-class="{ selected: contact.selected }" ng-click="onContactClick(contact)">
+    <div class="contact-pic col-4">
+      <img src="{{contact.smallImageURL}}">
+    </div>
+    <div class="contact-title col-8">
+      <h5 class="list-group-item-heading">{{contact.name}}</h5>
+      <p class="list-group-item-text">{{contact.phone.home}}</p>
+    </div>
   </div>
 </div>
