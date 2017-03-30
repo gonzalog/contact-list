@@ -1,16 +1,20 @@
 <div ng-controller="ContactIndexCtrl" ng-init="bootstrap()">
-  <div class="row desktop-contacts-search hidden-xs-down">
-    <contact-list class="col-4 desktop-contact-list" contacts="contacts" on-contact-click="selectContact"></contact-list>
-    <contact-profile class="col-7 desktop-contact-profile" contact="currentContact" favorite-click="favoriteClick"></contact-profile>
+  <div class="hidden-md-down">
+    <div class="row desktop-contacts-search">
+      <contact-list class="col-4 desktop-contact-list" contacts="contacts" on-contact-click="selectContact"></contact-list>
+      <contact-profile class="col-8 desktop-contact-profile" contact="currentContact" favorite-click="favoriteClick"></contact-profile>
+    </div>
   </div>
-  <div class="mobile-contacts-search hidden-sm-up">
-    <contact-list class="mobile-contact-list" contacts="contacts" on-contact-click="selectContact" ng-hide="displayingContact"></contact-list>
-    <div ng-show="displayingContact" class="mobile-contact-profile">
-      <a ng-click="closeProfile()">
-        <span class="fa fa-chevron-left"></span>
-        All Contacts
-      </a>
-      <contact-profile contact="currentContact" favorite-click="favoriteClick"></contact-profile>
+  <div class="hidden-lg-up">
+    <div class="mobile-contacts-search">
+      <contact-list class="mobile-contact-list" contacts="contacts" on-contact-click="selectContact" ng-hide="displayingContact"></contact-list>
+      <div ng-show="displayingContact" class="mobile-contact-profile">
+        <a ng-click="closeProfile()">
+          <span class="fa fa-chevron-left"></span>
+          All Contacts
+        </a>
+        <contact-profile contact="currentContact" favorite-click="favoriteClick"></contact-profile>
+      </div>
     </div>
   </div>
 </div>

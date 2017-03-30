@@ -2,3 +2,4 @@ bower_components/
 node_modules/
 font-awesome-4.7.0/
 bootstrap/
+npm-debug.log
